@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Spotify – Web Player </title>
+    <link rel="stylesheet" href="spotify.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="leftNav">
+                <img id="logo" width="80px" class="invert" src="logo.svg">
+                <img id="navHome" width="30px" src="home.svg">
+            </div>
+            <div class="play">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder=" What do you want to play? ">
+                <i id="home" class="ri-inbox-line"></i>
+            </div>
+            <div class="midNav">
+                <div class="texts">
+                    <h4>Premium</h4>
+                </div>
+                <div class="texts">
+                    <h4>Support</h4>
+                </div>
+                <div class="texts" class="nav-link.active">
+                    <h4>Download</h4>
+                </div>
+                <!-- <div class="line"> <i class="ri-subtract-line"></i></div> -->
+            </div>
+            <div class="end">
+                <div class="one">
+                    <div class="icon1"><i class="ri-arrow-down-circle-line"></i></div>
+                    <div class="texts">
+                        <h4>Install App</h4>
+                    </div>
+                </div>
+                <div class="texts">
+                    <h4>Sign up</h4>
+                </div>
+                <button> Log in </button>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <div class="left border">
+                <div class="box1">
+                    <div class="library">
+                        <h5> Your Library </h5>
+                        <i class="ri-add-line"></i>
+                    </div>
+
+                    <div class="playlist">
+                        <h5> Create your first playlist </h5>
+                        <h6> It's easy, we'll help you</h6>
+                        <button> Create playlist </button>
+                    </div>
+                </div>
+
+                <div class="line1"></div>
+
+                <div class="box2">
+                    <ul>
+                        <a href="list">
+                            <li>Legal</li>
+                        </a>
+                        <a href="list">
+                            <li>Safety & Privacy Centre</li>
+                        </a>
+                        <a href="list">
+                            <li>Privacy Policy</li>
+                        </a>
+                        <a href="list">
+                            <li>Cookies</li>
+                        </a>
+                        <a href="list">
+                            <li>About Ads</li>
+                        </a>
+                        <a href="list">
+                            <li>Accessibility</li>
+                        </a>
+                    </ul>
+                    <a id="cookie" href="list">Cookies</a>
+
+                    <div class="butteng">
+                        <i class="ri-global-line"></i>
+                        <button> English</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right border">
+                <h1> Trending Songs </h1>
+
+                <div class="cardcntainer">
+
+                    <div class="card" data-index="0">
+                        <img
+                            src="songs/images/img1.jpg">
+                        <h3> Gumaan </h3>
+                        <p> Talha Anjum </p>
+                        <div class="playbutt">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                    </div>
+                    <div class="card" data-index="1">
+                        <img src="songs/images/img2.jpg" alt="Talha">
+                        <h3> Wake Me Up </h3>
+                        <p> Aleemrk </p>
+                        <div class="playbutt">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                    </div>
+                    <div class="card" data-index="2">
+                        <img src="songs/images/img3.jpg">
+                        <h3> La Haasil </h3>
+                        <p> Sunny Khan Durrani </p>
+                        <div class="playbutt">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                    </div>
+                    <div class="card" data-index="3">
+                        <img src="songs/images/img4.jpg">
+                        <h3> Rockabye </h3>
+                        <p> Annie Marie & Clean Bandit </p>
+                        <div class="playbutt">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                    </div>
+                    <div class="card" data-index="4">
+                        <img src="songs/images/img5.jpg">
+                        <h3> Falak Tak </h3>
+                        <p> Udit Narayan </p>
+                        <div class="playbutt">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                    </div>
+                    <div class="card" data-index="5">
+                        <img src="songs/images/img6.jpg">
+                        <h3> Cheap Thrill </h3>
+                        <p> Sia </p>
+                        <div class="playbutt">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                    </div>
+                    <div class="card" data-index="6">
+                        <img src="songs/images/img7.jpg">
+                        <h3> Deewana </h3>
+                        <p> Mustafa Zahid </p>
+                        <div class="playbutt">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                    </div>
+                    
+
+
+                    <div class="scrollbar hidden" >
+                        <div class="songcard ">
+                            <div class="songlist">
+                                <img src="songs/images/gumaan.jpg" alt="song">
+                                <span> Falak Tak </span>
+                                <span class="songlistplay"><span class="timespan">05:07<i id="0"
+                                            class=" songitemplay ri-play-circle-line"></i></span></span>
+                            </div>
+                            <div class="songlist">
+                                <img src="https://indiansong.org/online/wp-content/uploads/2014/03/falak-tak-chal-saath-mere-01-720x720.jpg"
+                                    alt="song">
+                                <span> Falak Tak </span>
+                                <span class="songlistplay"><span class="timespan">05:07<i  id="1"
+                                            class=" songitemplay ri-play-circle-line"></i></span></span>
+                            </div>
+                            <div class="songlist">
+                                <img src="https://indiansong.org/online/wp-content/uploads/2014/03/falak-tak-chal-saath-mere-01-720x720.jpg"
+                                    alt="song">
+                                <span> Falak Tak </span>
+                                <span class="songlistplay"><span class="timespan">05:07<i id="2"
+                                            class=" songitemplay ri-play-circle-line"></i></span></span>
+                            </div>
+                            <div class="songlist">
+                                <img src="https://indiansong.org/online/wp-content/uploads/2014/03/falak-tak-chal-saath-mere-01-720x720.jpg"
+                                    alt="song">
+                                <span> Falak Tak </span>
+                                <span class="songlistplay"><span class="timespan">05:07<i id="3"
+                                            class=" songitemplay ri-play-circle-line"></i></span></span>
+                            </div>
+                            <div class="songlist">
+                                <img src="https://indiansong.org/online/wp-content/uploads/2014/03/falak-tak-chal-saath-mere-01-720x720.jpg"
+                                    alt="song">
+                                <span> Falak Tak </span>
+                                <span class="songlistplay"><span class="timespan">05:07<i id="4"
+                                            class="songitemplay ri-play-circle-line"></i></span></span>
+                            </div>
+                            <div class="songlist">
+                                <img src="https://indiansong.org/online/wp-content/uploads/2014/03/falak-tak-chal-saath-mere-01-720x720.jpg"
+                                    alt="song">
+                                <span> Falak Tak </span>
+                                <span class="songlistplay"><span class="timespan">05:07<i id="5"
+                                            class="songitemplay ri-play-circle-line"></i></span></span>
+                            </div>
+                            <div class="songlist">
+                                <img src="https://indiansong.org/online/wp-content/uploads/2014/03/falak-tak-chal-saath-mere-01-720x720.jpg"
+                                    alt="song">
+                                <span> Falak Tak </span>
+                                <span class="songlistplay"><span class="timespan">05:07<i id="6"
+                                            class="songitemplay ri-play-circle-line"></i></span></span>
+                            </div>
+                        
+                    </div>
+
+    
+
+
+
+                        <div class="time">
+                            <div class="icons">
+                                <div> <i id="prev"  class="ri-arrow-left-circle-line"></i></div>
+                                <div> <i id="play" class="ri-play-circle-line"></i></div>
+                                <div><i  id="next"   class="ri-arrow-right-circle-line"></i></div>
+                                <input type="range" name="range" id="progress" min="0" value="0" max="100">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="songs.js"></script>
+    <script src="spotify.js"></script>
+</body>
+
+</html>
